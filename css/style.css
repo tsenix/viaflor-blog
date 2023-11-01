@@ -729,12 +729,12 @@ h6 {
   gap: 10px;
 }
 
-.info__date img {
+.info__date .info__date-icon {
   width: 24px;
   height: 24px;
 }
 
-.info__date span {
+.info__date-text {
   font-size: 16px;
   line-height: 24px;
   color: #AFAFAF;
@@ -816,6 +816,10 @@ h6 {
   list-style-position: inside;
 }
 
+.info__body img {
+  width: 100%;
+}
+
 .info__button {
   margin-top: 40px;
   text-align: center;
@@ -830,12 +834,15 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
+  padding: 0 0 10px;
+  overflow-x: auto;
 }
 
 .breadcrumbs__item {
   font-size: 18px;
   line-height: 120%;
   color: #A1A1A1;
+  white-space: nowrap;
 }
 
 .breadcrumbs__item.link {
